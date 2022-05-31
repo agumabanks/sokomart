@@ -13,8 +13,13 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
+Route::get('/w', function () {
     return view('app');
+});
+
+
+Route::get('/', function () {
+    return view('test');
 });
 
 Route::any('{all}', function($uri) {
